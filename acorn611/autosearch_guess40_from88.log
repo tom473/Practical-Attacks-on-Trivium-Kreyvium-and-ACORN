@@ -1,0 +1,152 @@
+        0.00 - Step 1: parse input
+
+++++++++++++++++++++++++++++ parameter +++++++++++++++++++++++++++++++++
+
+# variables: 128
+# guess: 40
+
+ preset guess [40]:  k0 k1 k3 k5 k6 k7 k8 k9 k10 k12 k13 k17 k20 k22 k23 k26 k27 k28 k29 k30 k32 k33 k34 k35 k36 k37 k38 k39 k43 k47 k50 k51 k52 k54 k55 k56 k57 k63 k67 k113
+
+Gurobi threads: 64
+
+Dirname: ori_logs
+
+2022-02-22-10:34:58
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        0.00 - Step 2: build model
+Set parameter Username
+Academic license - for non-commercial use only - expires 2022-06-20
+Set parameter Threads to value 64
+Set parameter MIPFocus to value 3
+eq 0 balanced bits: [k6 k7 k9 k11 k15 k18 k19 k21 k22 k23 k25 k26 k27 k29 k32 k34 k45 k46 k48 k49 k51 k59 k60 k69 k71 k73 k74 k77 k79 k80 k81 k88 k93 k108 k110 k113 k114] <== {k1 k2 k8 k10 k13 k14 k30 k35 k39 k44 k47 k50 k52 k55 k56 k89 k98}
+eq 1 balanced bits: [k3 k8 k23 k25 k28 k29 k62]
+eq 2 balanced bits: [k1 k3 k6 k7 k40]
+eq 3 balanced bits: [k12 k18 k23 k24 k27 k28 k34 k37 k45 k47 k48 k49 k56 k61 k73 k76 k78 k81 k82 k115] <== {k1 k2 k3 k5 k6 k7 k8 k9 k11 k13 k15 k16 k17 k21 k36 k38 k40 k41 k42 k50 k57 k75}
+eq 4 balanced bits: [k9 k10 k12 k15 k16 k19 k20 k22 k25 k26 k28 k33 k35 k37 k39 k40 k43 k45 k46 k47 k48 k50 k53 k59 k74 k76 k79 k80 k87 k113] <== {k1 k13 k55}
+eq 5 balanced bits: [k10 k12 k15 k16 k49]
+eq 6 balanced bits: [k0 k2 k5 k7 k17 k18 k19 k21 k22 k23 k24 k28 k29 k32 k33 k42 k44 k46 k47 k50 k52 k53 k54 k61 k66 k81 k83 k86 k87 k120] <== {k3 k8 k20 k62}
+eq 7 balanced bits: [k4 k5 k10 k11 k15 k16 k18 k22 k24 k25 k26 k27 k28 k30 k31 k37 k39 k40 k41 k44 k45 k47 k49 k50 k53 k58 k59 k64 k72 k74 k76 k78 k79 k80 k87 k92 k109 k112 k113] <== {k0 k1 k7 k9 k12 k13 k29 k34 k38 k43 k46 k51 k54 k55 k88 k97}
+eq 8 balanced bits: [k0 k1 k2 k4 k6 k8 k9 k15 k17 k18 k19 k22 k25 k27 k28 k29 k30 k34 k37 k39 k42 k54 k56 k57 k60 k62 k63 k93 k96]
+eq 9 balanced bits: [k1 k11 k13 k15 k16 k17 k21 k30 k35 k50 k52 k55 k89]
+eq 10 balanced bits: [k5 k7 k9 k10 k13 k15 k16 k17 k24 k29 k44 k46 k49 k50 k83]
+eq 11 balanced bits: [k1 k3 k4 k5 k12 k17 k24 k26 k28 k32 k34 k37 k38 k71]
+eq 12 balanced bits: [k2 k3 k12 k14 k16 k17 k20 k22 k23 k24 k31 k36 k51 k53 k56 k57 k90]
+eq 13 balanced bits: [k0 k1 k2 k4 k5 k6 k7 k10 k11 k12 k13 k16 k17 k18 k24 k26 k28 k32 k33 k34 k35 k39 k44 k71 k72]
+eq 14 balanced bits: [k6 k11 k16 k26 k28 k31 k32 k65]
+eq 15 balanced bits: [k0 k1 k3 k4 k6 k7 k8 k12 k13 k14 k27 k32 k34 k37 k38 k39 k46 k66 k71 k72 k105] <== {k5 k47}
+eq 16 balanced bits: [k5 k7 k10 k11 k44]
+eq 17 balanced bits: [k0 k1 k2 k4 k6 k7 k10 k12 k18 k20 k22 k29 k30 k35 k37 k39 k42 k43 k46 k48 k49 k50 k57 k58 k62 k69 k71 k73 k77 k79 k82 k83 k116] <== {k11 k13 k15 k16 k19 k21 k24 k25}
+eq 18 balanced bits: [k11 k13 k16 k17 k50]
+eq 19 balanced bits: [k2 k14 k15 k17 k19 k23 k26 k27 k29 k30 k31 k33 k34 k35 k37 k40 k42 k53 k54 k56 k57 k59 k67 k68 k77 k79 k81 k82 k85 k87 k88 k89 k96 k101 k116 k118 k121 k122] <== {k0 k1 k4 k5 k6 k9 k10 k16 k18 k21 k22 k38 k43 k47 k48 k52 k55 k58 k60 k63 k64 k97 k106}
+eq 20 balanced bits: [k12 k14 k17 k18 k51]
+eq 21 balanced bits: [k1 k16 k18 k21 k22 k55]
+eq 22 balanced bits: [k0 k15 k17 k20 k21 k54]
+eq 23 balanced bits: [k13 k15 k18 k19 k52]
+eq 24 balanced bits: [k2 k3 k5 k6 k7 k9 k10 k11 k13 k16 k18 k28 k29 k30 k32 k33 k34 k35 k39 k40 k43 k44 k53 k55 k57 k58 k61 k63 k64 k65 k72 k77 k92 k94 k97 k98] <== {k14 k19 k31 k73}
+eq 25 balanced bits: [k0 k12 k13 k15 k17 k24 k25 k27 k28 k29 k31 k32 k33 k35 k38 k40 k51 k52 k54 k55 k57 k65 k66 k75 k77 k79 k80 k83 k85 k86 k87 k94 k99 k114 k116 k119 k120] <== {k2 k3 k4 k7 k8 k14 k16 k19 k20 k36 k41 k45 k46 k50 k53 k56 k58 k61 k62 k95 k104}
+eq 26 balanced bits: [k1 k2 k5 k6 k15 k17 k19 k20 k23 k25 k26 k27 k34 k39 k54 k56 k59 k60 k93]
+eq 27 balanced bits: [k0 k1 k5 k7 k10 k13 k16 k17 k19 k20 k25 k26 k27 k28 k29 k30 k31 k32 k33 k34 k37 k39 k40 k45 k47 k50 k52 k59 k61 k63 k65 k69 k70 k71 k72 k73 k104 k106] <== {k4 k6 k46 k48}
+eq 28 balanced bits: [k3 k5 k7 k8 k11 k13 k14 k15 k22 k27 k42 k44 k47 k48 k81]
+eq 29 balanced bits: [k1 k2 k3 k4 k8 k9 k12 k13 k22 k24 k26 k27 k30 k32 k33 k34 k41 k46 k61 k63 k66 k67 k100] <== {k0 k42}
+eq 30 balanced bits: [k1 k3 k6 k7 k10 k12 k13 k14 k21 k26 k33 k35 k37 k41 k43 k46 k47 k80]
+eq 31 balanced bits: [k0 k1 k3 k6 k8 k18 k19 k20 k22 k23 k24 k25 k29 k30 k33 k34 k43 k45 k47 k48 k51 k53 k54 k55 k62 k67 k82 k84 k87 k88 k121] <== {k4 k9 k21 k63}
+eq 32 balanced bits: [k0 k2 k3 k4 k11 k16 k31 k33 k36 k37 k70]
+eq 33 balanced bits: [k3 k15 k16 k18 k20 k27 k28 k30 k31 k32 k34 k35 k36 k38 k41 k43 k54 k55 k57 k58 k60 k68 k69 k78 k80 k82 k83 k86 k88 k89 k90 k97 k102 k117 k119 k122 k123] <== {k0 k1 k2 k5 k6 k7 k10 k11 k17 k19 k22 k23 k39 k44 k48 k49 k53 k56 k59 k61 k64 k65 k98 k107}
+eq 34 balanced bits: [k5 k11 k12 k14 k16 k17 k19 k20 k21 k22 k26 k27 k30 k31 k35 k37 k39 k40 k43 k45 k46 k47 k59 k64 k74 k76 k79 k80 k113] <== {k1 k13 k55}
+eq 35 balanced bits: [k3 k4 k5 k8 k10 k11 k12 k15 k16 k18 k21 k22 k23 k24 k26 k31 k32 k33 k34 k35 k37 k39 k41 k43 k44 k45 k46 k47 k49 k51 k60 k65 k71 k72 k80 k82 k85 k119] <== {k2 k7 k19 k61}
+eq 36 balanced bits: [k0 k2 k3 k4 k6 k9 k19 k20 k21 k23 k24 k25 k26 k30 k31 k34 k35 k40 k44 k46 k48 k49 k52 k54 k55 k56 k63 k68 k83 k85 k88 k89 k122] <== {k5 k10 k22 k64}
+eq 37 balanced bits: [k7 k9 k12 k13 k46]
+eq 38 balanced bits: [k0 k2 k3 k6 k7 k10 k11 k13 k14 k15 k17 k18 k19 k21 k22 k29 k30 k31 k32 k38 k39 k40 k42 k43 k44 k46 k48 k49 k50 k57 k59 k61 k62 k64 k65 k77 k79 k82 k83 k98 k116] <== {k4 k16 k58}
+eq 39 balanced bits: [k0 k1 k10 k12 k14 k15 k18 k20 k21 k22 k29 k34 k49 k51 k54 k55 k88]
+eq 40 balanced bits: [k0 k2 k9 k10 k12 k13 k14 k16 k17 k18 k20 k23 k25 k36 k37 k39 k40 k41 k42 k50 k51 k60 k62 k64 k65 k68 k70 k71 k72 k79 k84 k99 k101 k104 k105] <== {k1 k4 k5 k21 k26 k30 k35 k38 k43 k46 k47 k80 k89}
+eq 41 balanced bits: [k0 k2 k3 k8 k11 k14 k15 k16 k21 k22 k25 k26 k27 k32 k33 k36 k37 k43 k45 k46 k49 k50 k51 k54 k56 k57 k58 k65 k70 k82 k85 k87 k90 k91 k124] <== {k7 k12 k24 k66}
+eq 42 balanced bits: [k0 k2 k3 k4 k6 k9 k11 k21 k22 k23 k25 k26 k27 k28 k32 k33 k36 k37 k46 k48 k50 k51 k54 k56 k57 k58 k65 k70 k85 k87 k90 k91 k124] <== {k7 k12 k24 k66}
+eq 43 balanced bits: [k1 k2 k3 k4 k6 k8 k10 k12 k13 k14 k21 k26 k33 k35 k37 k43 k46 k47 k80]
+eq 44 balanced bits: [k0 k1 k4 k6 k8 k9 k20 k23 k25 k29 k30 k32 k33 k34 k36 k39 k40 k41 k48 k55 k59 k60 k61 k64 k65 k66 k68 k75 k77 k80 k81 k98 k105 k114] <== {k2 k5 k10 k11 k12 k13 k14 k15 k16 k17 k21 k47 k49 k50 k56}
+eq 45 balanced bits: [k2 k3 k4 k6 k7 k8 k9 k12 k13 k27 k29 k31 k35 k37 k38 k39 k46 k66 k68 k71 k72 k105] <== {k5 k47}
+eq 46 balanced bits: [k28 k33 k48 k62 k83 k87 k121 k126] <== {k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18 k19 k20 k21 k22 k23 k25 k26 k27 k29 k30 k31 k32 k34 k35 k37 k38 k39 k40 k41 k43 k44 k46 k47 k49 k50 k52 k53 k54 k55 k56 k63 k64 k66 k68 k71 k72 k73 k77 k80 k86 k89 k105 k122}
+eq 47 balanced bits: [k0 k1 k2 k6 k7 k8 k11 k13 k18 k19 k22 k24 k25 k27 k28 k30 k31 k39 k44 k47 k52 k53 k59 k61 k64 k65 k86 k98] <== {k10 k12 k15 k16 k21 k49}
+eq 48 balanced bits: [k2 k3 k10 k14 k15 k18 k19 k20 k27 k32 k33 k34 k35 k38 k40 k41 k46 k48 k51 k53 k66 k70 k71 k72 k73 k74 k105 k107] <== {k5 k7 k11 k13 k16 k17 k25 k47 k49 k50}
+eq 49 balanced bits: [k0 k2 k3 k4 k6 k7 k8 k9 k11 k14 k15 k16 k19 k20 k23 k25 k28 k30 k31 k32 k33 k34 k37 k38 k39 k41 k42 k51 k53 k54 k55 k60 k61 k62 k63 k70 k75 k90 k92 k93 k95 k96] <== {k12 k17 k29 k71}
+eq 50 balanced bits: [k6 k20 k21 k25 k29 k54 k66 k68 k69 k70 k72 k73 k75 k77 k79 k83 k85 k93 k94 k108 k109 k110 k111 k113 k122] <== {k0 k1 k2 k3 k4 k5 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18 k19 k22 k23 k24 k26 k27 k28 k30 k31 k32 k34 k35 k36 k37 k38 k39 k40 k41 k42 k44 k45 k47 k48 k49 k50 k51 k52 k53 k55 k56 k57 k61 k64 k71 k76 k78 k81 k82 k89 k90 k98 k99 k115}
+eq 51 balanced bits: [k9 k15 k48] <== {k0 k2 k3 k4 k5 k7 k10 k11 k12 k13 k14 k16 k17 k20 k21 k22 k23 k24 k31 k36 k37 k44 k50 k51 k53 k56 k57 k90}
+eq 52 balanced bits: [k11 k12 k16 k17 k18 k21 k22 k24 k26 k28 k33 k36 k38 k41 k43 k47 k48 k49 k53 k61 k63 k64 k67 k69 k70 k71 k74 k76 k78 k80 k83 k87 k98 k100 k103 k104 k113] <== {k0 k1 k3 k4 k13 k20 k25 k29 k34 k37 k42 k45 k46 k55 k79 k88}
+eq 53 balanced bits: [k7 k9 k11 k12 k15 k17 k18 k19 k26 k31 k46 k48 k51 k52 k85]
+eq 54 balanced bits: [k1 k3 k5 k6 k8 k9 k10 k11 k16 k18 k19 k25 k27 k32 k40 k42 k45 k46 k47 k49 k52 k53 k79 k86]
+eq 55 balanced bits: [k8 k10 k12 k13 k14 k18 k27 k32 k47 k49 k52 k86]
+eq 56 balanced bits: [k16]
+eq 57 balanced bits: [k0 k5 k20 k22 k25 k26 k59]
+eq 58 balanced bits: [k0 k1 k4 k6 k7 k8 k15 k20 k35 k37 k40 k41 k74]
+eq 59 balanced bits: [k2 k9 k11 k13 k17 k19 k22 k23 k56]
+eq 60 balanced bits: [k0 k1 k5 k6 k9 k10 k19 k21 k23 k24 k27 k29 k30 k31 k38 k43 k58 k60 k63 k64 k97]
+eq 61 balanced bits: [k2 k7 k22 k24 k27 k28 k61]
+eq 62 balanced bits: [k2 k5 k6 k7 k8 k9 k13 k17 k19 k21 k22 k24 k27 k30 k33 k38 k39 k40 k41 k44 k45 k50 k59 k61 k63 k66 k67 k71 k78 k83 k98 k100 k104] <== {k0 k3 k4 k20 k25 k29 k34 k37 k42 k46 k79 k88}
+eq 63 balanced bits: [k0 k3 k4 k37]
+eq 64 balanced bits: [k4 k5 k6 k7 k13 k14 k15 k17 k18 k19 k21 k23 k24 k25 k26 k28 k30 k32 k34 k36 k37 k39 k40 k52 k54 k57 k58 k73 k91]
+eq 65 balanced bits: [k16 k21]
+eq 66 balanced bits: [k5 k6 k7 k9 k16 k17 k22 k24 k27 k28 k31 k32 k33 k36 k37 k38 k41 k45 k50 k61 k63 k65 k66 k70 k71 k100 k104] <== {k0 k4 k42 k46}
+eq 67 balanced bits: [k0 k2 k4 k6 k7 k11 k15 k16 k17 k22 k25 k35 k37 k39 k40 k41 k45 k54 k59 k74 k76 k79 k113] <== {k1 k13 k55}
+eq 68 balanced bits: [k7 k8 k9 k11 k18 k41 k42 k49 k50 k51 k53 k56 k58 k69 k70 k72 k73 k75 k83 k84 k93 k95 k97 k98 k101 k103 k104 k105 k112 k117] <== {k0 k1 k3 k4 k5 k10 k12 k13 k14 k15 k16 k17 k20 k21 k22 k25 k26 k29 k30 k31 k32 k34 k35 k37 k38 k43 k45 k46 k47 k54 k55 k59 k63 k64 k68 k71 k74 k76 k79 k80 k85 k88 k89 k113 k122}
+eq 69 balanced bits: [k0 k1 k3 k4 k5 k7 k10 k12 k22 k23 k24 k26 k27 k28 k29 k33 k34 k37 k38 k47 k49 k51 k52 k55 k57 k58 k59 k66 k71 k86 k88 k91 k92 k125] <== {k8 k13 k25 k67}
+eq 70 balanced bits: [k77 k105 k118 k119 k127] <== {k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 k10 k11 k12 k13 k14 k15 k16 k17 k18 k19 k20 k21 k22 k23 k24 k25 k26 k27 k28 k29 k30 k31 k32 k33 k34 k35 k36 k37 k38 k39 k40 k41 k42 k43 k44 k45 k46 k47 k48 k49 k50 k51 k52 k53 k54 k55 k56 k57 k58 k59 k60 k61 k62 k64 k65 k66 k68 k69 k70 k71 k72 k73 k74 k75 k76 k78 k79 k80 k81 k82 k83 k84 k85 k87 k88 k89 k90 k91 k92 k93 k95 k98 k99 k103 k107 k108 k109 k112 k113 k115 k120 k123 k124 k125}
+eq 71 balanced bits: [k1 k3 k6 k8 k9 k11 k12 k13 k14 k18 k19 k22 k23 k32 k34 k36 k37 k42 k43 k44 k51 k56 k71 k73 k76 k77 k110] <== {k10 k52}
+eq 72 balanced bits: [k0 k2 k3 k4 k5 k9 k10 k13 k14 k21 k23 k25 k27 k28 k31 k33 k34 k35 k42 k47 k62 k64 k67 k68 k101] <== {k1 k43}
+eq 73 balanced bits: [k8 k10 k12 k15 k16 k20 k27 k32 k47 k49 k53 k86]
+eq 74 balanced bits: [k12 k14 k17 k18 k25 k51]
+eq 75 balanced bits: [k2 k6 k7 k10 k13 k17 k18 k20 k24 k26 k27 k28 k35 k40 k44 k50 k55 k57 k60 k61 k94]
+eq 76 balanced bits: [k4 k5 k10 k12 k14 k17 k18 k21 k23 k24 k25 k32 k37 k44 k46 k48 k52 k54 k57 k58 k91]
+eq 77 balanced bits: [k2 k5 k15 k17 k19 k20 k21 k25 k34 k39 k54 k56 k59 k93]
+eq 78 balanced bits: [k3 k5 k8 k9 k42]
+eq 79 balanced bits: [k3 k4 k7 k8 k17 k19 k21 k22 k25 k27 k28 k29 k36 k41 k56 k58 k61 k62 k95]
+eq 80 balanced bits: [k2 k3 k4 k6 k11 k13 k14 k15 k16 k19 k23 k26 k30 k31 k35 k36 k38 k39 k40 k42 k45 k48 k49 k52 k53 k55 k56 k58 k63 k68 k73 k75 k78 k79 k83 k85 k88 k89 k112 k122] <== {k0 k5 k10 k12 k22 k54 k64}
+eq 81 balanced bits: [k2 k5 k6 k7 k8 k11 k13 k15 k16 k17 k23 k26 k27 k28 k30 k32 k36 k38 k41 k42 k60 k75]
+eq 82 balanced bits: [k0 k7 k12 k19 k21 k23 k27 k29 k32 k33 k66]
+eq 83 balanced bits: [k5 k7 k8 k9 k10 k15 k20 k23 k25 k27 k29 k30 k31 k35 k37 k38 k40 k41 k43 k60 k63 k64 k74 k97]
+eq 84 balanced bits: [k1 k3 k4 k5 k12 k17 k34 k37 k38 k71]
+eq 85 balanced bits: [k3 k4 k9 k11 k13 k16 k17 k20 k22 k23 k24 k31 k36 k43 k45 k47 k51 k53 k56 k57 k90]
+eq 86 balanced bits: [k1 k3 k7 k10 k11 k13 k14 k15 k17 k18 k19 k21 k24 k26 k37 k38 k40 k41 k43 k51 k52 k61 k63 k65 k66 k69 k71 k72 k73 k80 k85 k100 k102 k105 k106] <== {k0 k2 k5 k6 k22 k27 k31 k36 k39 k42 k44 k47 k48 k81 k90}
+eq 87 balanced bits: [k0 k1 k4 k6 k7 k8 k15 k20 k27 k29 k31 k35 k37 k40 k41 k74]
+deduce limit: 88
+
+        0.13 - Step 3: optimize
+Gurobi Optimizer version 9.5.0 build v9.5.0rc5 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 64 threads
+Optimize a model with 64027 rows, 2204 columns and 256936 nonzeros
+Model fingerprint: 0x78e39849
+Variable types: 0 continuous, 2204 integer (2076 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 9e+01]
+  RHS range        [1e+00, 2e+02]
+Presolve removed 64027 rows and 2204 columns
+Presolve time: 0.04s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.06 seconds (0.10 work units)
+Thread count was 1 (of 64 available processors)
+
+Solution count 1: 88 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.800000000000e+01, best bound 8.800000000000e+01, gap 0.0000%
+        0.19 - Step 4: output information
+Guessed index [40]:  k0 k1 k3 k5 k6 k7 k8 k9 k10 k12 k13 k17 k20 k22 k23 k26 k27 k28 k29 k30 k32 k33 k34 k35 k36 k37 k38 k39 k43 k47 k50 k51 k52 k54 k55 k56 k57 k63 k67 k113
+
+
+
+Guessed level [40]:  k0[1] k1[1] k3[1] k5[1] k6[1] k7[1] k8[1] k9[1] k10[4] k12[1] k13[1] k17[2] k20[3] k22[3] k23[5] k26[3] k27[5] k28[3] k29[72] k30[77] k32[3] k33[6] k34[2] k35[6] k36[73] k37[1] k38[2] k39[76] k43[6] k47[5] k50[2] k51[4] k52[4] k54[3] k55[3] k56[5] k57[73] k63[78] k67[82] k113[76]
+
+Deduced index: 2,4,11,14,15,16,18,19,21,24,25,31,40,41,42,44,45,46,48,49,53,58,59,60,61,62,64,65,66,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,114,115,116,117,118,119,120,121,122,123,124,125,126,127,[88]
+
+Deduced level:  k2[5] k4[1] k11[2] k14[4] k15[3] k16[1] k18[3] k19[4] k21[2] k24[3] k25[74] k31[72] k40[1] k41[70] k42[1] k44[78] k45[74] k46[1] k48[79] k49[4] k53[72] k58[79] k59[75] k60[77] k61[79] k62[79] k64[77] k65[80] k66[80] k68[82] k69[84] k70[80] k71[2] k72[80] k73[81] k74[71] k75[80] k76[76] k77[82] k78[84] k79[75] k80[6] k81[82] k82[82] k83[82] k84[85] k85[80] k86[5] k87[80] k88[83] k89[83] k90[73] k91[80] k92[81] k93[76] k94[81] k95[80] k96[80] k97[78] k98[81] k99[84] k100[82] k101[84] k102[86] k103[85] k104[83] k105[81] k106[85] k107[86] k108[87] k109[87] k110[86] k111[88] k112[85] k114[83] k115[87] k116[83] k117[86] k118[87] k119[83] k120[83] k121[86] k122[84] k123[87] k124[81] k125[87] k126[88] k127[88]
+
+Main deduced [eq index]: 0[k108] 1[k62] 2[k40] 3[k115] 4[k87] 5[k49] 6[k120] 7[k109] 8[k96] 9[k89] 10[k83] 11[k24] 12[k90] 13[k72] 14[k65] 15[k105] 16[k44] 17[k69] 18[k11] 19[k118] 20[k14] 21[k18] 22[k15] 23[k19] 24[k77] 25[k99] 26[k60] 27[k106] 28[k81] 29[k100] 30[k41] 31[k121] 32[k70] 33[k123] 34[k64] 35[k119] 36[k122] 37[k46] 38[k116] 39[k88] 40[k84] 41[k82] 42[k124] 43[k80] 44[k114] 45[k68] 46[k126] 47[k98] 48[k107] 49[k92] 50[k111] 51[k48] 52[k103] 53[k85] 54[k79] 55[k86] 56[k16] 57[k59] 58[k74] 59[k2] 60[k58] 61[k61] 62[k78] 63[k4] 64[k73] 65[k21] 66[k104] 67[k76] 68[k117] 69[k125] 70[k127] 71[k110] 72[k101] 73[k53] 74[k25] 75[k94] 76[k91] 77[k93] 78[k42] 79[k95] 80[k112] 81[k75] 82[k66] 83[k97] 84[k71] 85[k45] 86[k102] 87[k31]
+
+        0.19 - Expect limit: 88, real obj val: 88.000000
+
+        0.19 - All done
+
+2022-02-22-10:34:58
